@@ -1,0 +1,58 @@
+
+/*Sección header*/
+.logo{
+    margin-left: 50px;
+    color: $color-logo !important;
+    font-family: $typo-logo;
+    font-size: 2.6rem;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 0px !important;
+}
+
+.navbar-brand{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.navbar-collapse{
+    justify-content: end !important;
+}
+
+.nav-item{
+    padding: 10px 20px 6px 20px;
+    border-bottom: 4px solid rgba(0, 0, 0, 0);
+    font-size: 1.2rem;
+    font-weight: 600 !important;
+}
+
+.nav-item:hover{
+    background-color: rgb(49, 48, 48);
+    border-bottom: 4px solid $color-navbar;
+    color: white;
+}
+
+.dropdown-menu{
+    background-color: #202020;
+}
+
+.dropdown-item{
+    color: white !important;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(255, 255, 255, 0) !important;
+    border-left: 4px solid $color-navbar;
+    border-right: 4px solid $color-navbar;
+}
+
+.navbar-toggler{
+    border: var(--bs-border-width) solid $color-navbar;
+    color: $color-navbar-btn !important;
+}

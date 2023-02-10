@@ -1,0 +1,29 @@
+/* Sección footer index */
+.footer{
+    background-color: black;
+    color: white;
+    border-top: 5px solid yellow;
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .footer__icons{
+            padding: 15px;
+            margin:0px 10px;
+            border-bottom: 1px solid white;
+        }
+        .footer__copy{
+            margin-top: 15px;
+        }
+        .footer__img{
+            width: 38px;
+            margin: 0px 10px;
+        }
+        .footer__img:hover{
+            background-color: rgba(255, 255, 0, 0.315);
+            border: 1px solid orange;
+            border-radius: 100%;
+        }
+    }
+}
+

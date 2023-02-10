@@ -4,9 +4,236 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Entrega-3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Nikon</title>
+
 </head>
 <body>
-    <h1>Pre-Entrega-3</h1>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand animate__animated animate__backInRight logo" href="./index.html">Nikon</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./pages/products/camaras.html">Camaras</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./pages/products/lentes.html">Lentes</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/pages/products/accesorios.html">Accesorios</a>
+                            </li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/locales.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-index">
+    <!-- Sección hero -->
+    <section class="hero">
+        <div class="hero__container">
+            <h1 class="hero__text">
+            bienvenido a nuestro mundo... nikon.
+            </h1>
+        </div>
+    </section>
+
+    <!-- Sección camara -->
+    <section class="camara">
+        <div class="camara__container">
+            <div class="camara__text">
+                <h2 class="camara__title">conoce lo mejor en Camaras</h2>
+                <p class="camara__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere minima laboriosam possimus laborum </p>
+                <a href="productos.html" class="btn__vmas camara__btn">Ver más</a>
+            </div>
+            <img class="camara__img" src="https://images.unsplash.com/photo-1522555762491-5d1629e18c54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="">
+        </div>
+    </section>
+
+    <!-- Sección lentes -->
+    <section class="lentes">
+        <h2 class="lentes__title">Lentes mirrirless y réflex</h2>
+        <div class="lentes__container">
+
+            <div class="lentes__cartas">
+                <img src="./conten/1-sec-lente-1.jpg" alt="" class="lentes__img">
+                <p class="lentes__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam veritatis sun
+                    placeat dicta.
+                </p>
+                <a href="productos.html" class="lentes__btn btn__vmas">Ver más</a>
+            </div>
+
+            <div class="lentes__cartas">
+                <img src="./conten/2-sec-lente-2.jpg" alt="" class="lentes__img">
+                <p class="lentes__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam veritatis sun
+                    placeat dicta.
+                </p>
+                <a href="productos.html" class="lentes__btn btn__vmas">Ver más</a>
+            </div>
+
+            <div class="lentes__cartas">
+                <img src="./conten/1-sec-lente-1.jpg" alt="" class="lentes__img">
+                <p class="lentes__paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi aperiam veritatis sun
+                    placeat dicta.
+                </p>
+                <a href="productos.html" class="lentes__btn btn__vmas">Ver más</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección galeria -->
+    <section class="galeria">
+        
+        <div class="galeria__container">
+            <h2 class="galeria__text">
+                Visita nuestra galeria e inspirate a nuevas aventuras...
+            </h2>
+            <br>
+            <a href="galeria.html" class="galeria__btn">Ir a galería... </a>
+        </div>
+
+    </section>
+
+    <!-- Sección accesorios -->
+    <section class="accesorios">
+        <div class="accesorios__container">
+            <div class="accesorios__text">
+                <h2 class="accesorios__title">Contamos con los accesorios que necesites
+                </h2>
+                <p class="accesorios__paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam reiciendis error consequuntur, quaerat quia dignissimos.  </p>
+                <a href="productos.html" class="btn__vmas accesorios__btn">Ver más</a>
+            </div>
+            <img  class="accesorios__img" src="https://i.blogs.es/f17059/nikon-z6-z7-cazando-gangas-24-4-20/1366_2000.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Sección Historia -->
+    <section class="nosotros">
+        <div class="nosotros__container">
+            <div class="nosotros__text">
+                <h2 class="nosotros__title">Conoce un poco más acerca de nosotros</h2>
+                <p class="nosotros__paragraph">Fue fundada en 1917 y su nombre en japonés es Nippon Kogaku Kogyo y su creación tuvo lugar gracias a la unión de dos empresas líderes en el campo de los objetivos fotográficos, desde sus inicios...</p>
+                <a href="nosotros.html" class="nosotros__btn">Más información...</a>
+            </div>
+            <div>
+                <img class="nosotros__img" src="https://images.unsplash.com/photo-1470940511639-1068d7764233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=874&q=80" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección datos de comunicacion -->
+    <section class="datos">
+        <h2 class="datos__title">¡Contactanos!</h2>
+        <div class="datos__container">
+            <div class="datos__cartas item-1 ">
+                <p class="datos__paragraph">
+                    Lorem ipsum dolor sit.
+                </p>
+                <p> 
+                    Gmail: nikon@gmail.com
+                </p>
+                <p> 
+                    Lun a Vie
+                    10.00 a 16.00 hs
+                </p>
+                <p> 
+                    Tel: 11 3232-5454 <br>
+                    Tel: 11 6767-1515
+                </p>
+            </div>
+
+            <div class="datos__cartas item-2">
+                <p class="datos__paragraph">
+                    Lorem ipsum dolor sit.
+                </p>
+                <p> 
+                    Gmail: nikon@gmail.com
+                </p>
+                <p> 
+                    Lun a Vie
+                    10.00 a 16.00 hs
+                </p>
+                <p> 
+                    Tel: 11 3232-5454 <br>
+                    Tel: 11 6767-1515
+                </p>
+            </div>
+
+            <div class="datos__cartas item-3">
+                <p class="datos__paragraph">
+                    Lorem ipsum dolor sit.
+                </p>
+                <p> 
+                    Gmail: nikon@gmail.com
+                </p>
+                <p> 
+                    Lun a Vie
+                    10.00 a 16.00 hs
+                </p>
+                <p> 
+                    Tel: 11 3232-5454 <br>
+                    Tel: 11 6767-1515
+                </p>
+            </div>
+        </div>
+
+    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" >
+        <div class="footer__container">
+            
+            <div class="footer__icons">
+                <a href="https://www.facebook.com/NikonArgentina"><img src="./conten/facebook-logo-36 (1).png" alt="Icono de Facebook" class="footer__img"></a>
+                <a href="https://www.youtube.com/user/NikonArgentina"><img src="./conten/youtube-logo-36.png" alt="Icono de Youtube" class="footer__img"></a>
+                <a href="https://twitter.com/Nikon_Argentina"><img src="./conten/twitter-logo-36.png" alt="Icono de Twitter" class="footer__img"></a>
+                <a href="https://www.instagram.com/nikonargentinaoficial/"><img src="./conten/instagram-logo-36.png" alt="Icono de Instagram" class="footer__img"></a>
+            </div>
+
+            <div class="footer__copy">
+                <p> &copy; Derechos reservados 2023 👽</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="wow-js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

@@ -1,0 +1,250 @@
+@charset "UTF-8";
+/* Utilidades */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&family=Righteous&family=Roboto+Mono:wght@300;400&display=swap");
+/* Variables globales */
+/* color navbar */
+* {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2.8rem; }
+
+h2 {
+  font-size: 2.1rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+p {
+  font-size: 1.2rem; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+.btn__vmas {
+  background-color: orange;
+  color: white;
+  padding: 8px 25px;
+  font-size: 18px;
+  border-radius: 5px; }
+
+.btn__vmas:hover {
+  background-color: rgba(255, 179, 37, 0.705);
+  color: white;
+  border: 1px solid orange;
+  box-shadow: 0 0 20px rgba(250, 171, 0, 0.685); }
+
+.galeria__btn {
+  background-color: blueviolet;
+  padding: 10px 30px;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px; }
+
+.galeria__btn:hover {
+  background-color: rgba(163, 82, 238, 0.781);
+  border: 2px solid rgba(163, 82, 238, 0.781);
+  box-shadow: 0 0 20px #914dd1; }
+
+.nosotros__btn {
+  color: #4da8fd; }
+
+body {
+  font-family: 'roboto', sans-serif; }
+
+/* Secciones */
+/*Sección header*/
+.logo {
+  margin-left: 50px;
+  color: #ffaf01 !important;
+  font-family: "Righteous", sans-serif;
+  font-size: 2.6rem;
+  font-style: italic; }
+
+a {
+  text-decoration: none; }
+
+.navbar {
+  padding: 0px !important; }
+
+.navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important; }
+
+.navbar-collapse {
+  justify-content: end !important; }
+
+.nav-item {
+  padding: 10px 20px 6px 20px;
+  border-bottom: 4px solid rgba(0, 0, 0, 0);
+  font-size: 1.2rem;
+  font-weight: 600 !important; }
+
+.nav-item:hover {
+  background-color: #313030;
+  border-bottom: 4px solid #ffd61e;
+  color: white; }
+
+.dropdown-menu {
+  background-color: #202020; }
+
+.dropdown-item {
+  color: white !important; }
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-left: 4px solid #ffd61e;
+  border-right: 4px solid #ffd61e; }
+
+.navbar-toggler {
+  border: var(--bs-border-width) solid #ffd61e;
+  color: #ffd61ea4 !important; }
+
+/* Sección hero index */
+.hero {
+  height: 80vh;
+  background-image: url(https://images.unsplash.com/photo-1533637236732-baaf7a3588ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Sección camara index */
+.camara__container {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  text-align: center; }
+  .camara__container .camara__title {
+    text-transform: uppercase; }
+  .camara__container .camara__img {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.61); }
+
+/* Sección lentes index */
+.lentes {
+  background-color: black;
+  color: white; }
+  .lentes .lentes__title {
+    text-transform: uppercase;
+    padding-top: 2rem;
+    text-align: center; }
+  .lentes .lentes__container {
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .lentes .lentes__container .lentes__img {
+      width: 180px;
+      height: 180px;
+      border-radius: 100%; }
+    .lentes .lentes__container .lentes__cartas {
+      background-color: #0e0e0e;
+      border-radius: 15px;
+      margin: 15px 0px;
+      padding: 20px 0px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(31, 31, 31, 0.76); }
+    .lentes .lentes__container .lentes__paragraph {
+      padding: 5px; }
+
+/* Sección galería index */
+.galeria {
+  height: 75vh;
+  background-image: url(https://images.unsplash.com/photo-1500214439798-ef148e2fa93e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .galeria .galeria__container {
+    text-align: center;
+    width: 80%; }
+  .galeria .galeria__text {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white; }
+
+/* Sección accesorios index */
+.accesorios__container {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  place-items: center;
+  gap: 30px;
+  text-align: center; }
+  .accesorios__container .accesorios__img {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.61); }
+
+/* Sección nosotros index */
+.nosotros {
+  background-color: black;
+  color: white; }
+  .nosotros .nosotros__container {
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center; }
+  .nosotros .nosotros__img {
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(77, 76, 76, 0.61); }
+
+/* Sección datos index */
+.datos {
+  margin: 30px 0px;
+  text-align: center; }
+  .datos .datos__container {
+    margin: auto;
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    gap: 20px;
+    text-align: center; }
+    .datos .datos__container .datos__cartas {
+      border-bottom: 1px solid black; }
+    .datos .datos__container .item-3 {
+      border: none; }
+
+/* Sección footer index */
+.footer {
+  background-color: black;
+  color: white;
+  border-top: 5px solid yellow; }
+  .footer .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .footer__container .footer__icons {
+      padding: 15px;
+      margin: 0px 10px;
+      border-bottom: 1px solid white; }
+    .footer .footer__container .footer__copy {
+      margin-top: 15px; }
+    .footer .footer__container .footer__img {
+      width: 38px;
+      margin: 0px 10px; }
+    .footer .footer__container .footer__img:hover {
+      background-color: rgba(255, 255, 0, 0.315);
+      border: 1px solid orange;
+      border-radius: 100%; }

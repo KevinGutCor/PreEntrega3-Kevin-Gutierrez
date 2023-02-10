@@ -1,0 +1,148 @@
+
+/* Sección hero index */
+.hero{
+    height: 80vh;
+    background-image: url(https://images.unsplash.com/photo-1533637236732-baaf7a3588ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    .hero__container{
+        width: 80%;
+        text-align: center;
+        .hero__text{
+            font-size: 2.5rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        }
+    }
+}    
+
+/* Sección camara index */
+.camara__container{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+    .camara__title{
+        text-transform: uppercase;
+    }
+    .camara__img{
+        width: 95%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+    }
+}
+
+/* Sección lentes index */
+.lentes{
+    background-color: black;
+    color: white;
+    .lentes__title{
+        text-transform: uppercase;
+        padding-top: 2rem;
+        text-align: center;
+    }
+    .lentes__container{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        .lentes__img{
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+        }
+        .lentes__cartas{
+            background-color: rgb(14, 14, 14);
+            border-radius: 15px;
+            margin: 15px 0px;
+            padding: 20px 0px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(31, 31, 31, 0.76);
+        }
+        .lentes__paragraph{
+            padding: 5px;
+        }
+    }
+    
+}
+
+/* Sección galería index */
+.galeria{
+    height: 75vh;
+    background-image: url(https://images.unsplash.com/photo-1500214439798-ef148e2fa93e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    .galeria__container{
+        text-align: center;
+        width: 80%;
+    }
+    .galeria__text{
+        text-transform: uppercase;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+    }
+}
+
+/* Sección accesorios index */
+.accesorios__container{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    text-align: center;
+    .accesorios__img{
+        width: 95%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
+    }
+}
+
+/* Sección nosotros index */
+.nosotros{
+    background-color: black;
+    color: white;
+    .nosotros__container{
+        width: 90%;
+        margin: 0px auto;
+        padding: 30px 0px;
+        display: grid;
+        place-items: center;
+        gap: 30px;
+        text-align: center;
+    }
+    .nosotros__img{
+        width: 95%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(77, 76, 76, 0.61);
+    }
+}
+
+/* Sección datos index */
+.datos{
+    margin: 30px 0px;
+    text-align: center;
+    .datos__container{
+        margin: auto;
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1, 1fr;
+        gap: 20px;
+        text-align: center;
+        .datos__cartas{
+            border-bottom: 1px solid black;
+        }
+        .item-3{
+            border: none;
+        }
+    }
+}
+
