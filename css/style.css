@@ -126,13 +126,14 @@ a {
   width: 90%;
   margin: 30px auto;
   display: grid;
+  grid-template-columns: repeat(1, 1fr);
   place-items: center;
   gap: 30px;
   text-align: center; }
   .camara__container .camara__title {
     text-transform: uppercase; }
   .camara__container .camara__img {
-    width: 95%;
+    width: 90%;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.61); }
 
@@ -147,8 +148,7 @@ a {
   .lentes .lentes__container {
     width: 85%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); }
+    display: grid; }
     .lentes .lentes__container .lentes__img {
       width: 180px;
       height: 180px;
@@ -158,8 +158,7 @@ a {
       border-radius: 15px;
       margin: 15px 0px;
       padding: 20px 0px;
-      text-align: center;
-      box-shadow: 0 0 25px rgba(31, 31, 31, 0.76); }
+      text-align: center; }
     .lentes .lentes__container .lentes__paragraph {
       padding: 5px; }
 
@@ -214,37 +213,280 @@ a {
   margin: 30px 0px;
   text-align: center; }
   .datos .datos__container {
-    margin: auto;
+    margin: 0px auto;
     width: 90%;
     margin: 30px auto;
     display: grid;
-    grid-template-columns: 1, 1fr;
     gap: 20px;
     text-align: center; }
     .datos .datos__container .datos__cartas {
-      border-bottom: 1px solid black; }
-    .datos .datos__container .item-3 {
-      border: none; }
+      background-color: #dddbdb;
+      padding: 20px 5px;
+      border-radius: 5px; }
 
-/* Sección footer index */
+@media (min-width: 768px) {
+  /* sección hero index*/
+  .hero {
+    height: 70vh; }
+  /* Sección camara index*/
+  .camara__container {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; }
+  /* Sección lentes index */
+  .lentes__container {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem; }
+    .lentes__container .lentes__cartas {
+      padding: 1rem; }
+  /* Sección galería index*/
+  .galeria {
+    height: 65vh; }
+  /* Sección accesorios index */
+  .accesorios__container {
+    margin: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    grid-template-areas: "elemt-1    elemt-2"; }
+    .accesorios__container .accesorios__text {
+      grid-area: elemt-2; }
+    .accesorios__container .accesorios__img {
+      grid-area: elemt-1; }
+  /* Sección nosotros index */
+  .nosotros__container {
+    margin: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px; }
+  /* Sección datos index*/
+  .datos__container {
+    grid-template-columns: repeat(3, 1fr);
+    width: 95%; }
+    .datos__container .datos__cartas {
+      padding: 20px 10px; } }
+
+@media (min-width: 1024px) {
+  /* camara index*/
+  .camara__container .camara__paragraph {
+    padding: 1rem 0px; }
+  .camara__container .camara__img {
+    width: 80%; }
+  /* lentes index */
+  .lentes__container {
+    width: 100%;
+    padding-bottom: 30px; }
+    .lentes__container .lentes__paragraph {
+      margin: 1.2rem 12px; }
+  /* accesorios index */
+  .accesorios__container .accesorios__paragraph {
+    padding: 1rem 0px; }
+  .accesorios__container .accesorios__img {
+    width: 80%; }
+  /* nosotros index */
+  .nosotros__container {
+    margin: 30px 0px; }
+    .nosotros__container .nosotros__paragraph {
+      padding: 1rem 0px; }
+    .nosotros__container .nosotros__img {
+      width: 75%; } }
+
+/* Sección hero locales*/
+.locales__hero {
+  height: 80vh;
+  background-image: url(../../conten/inicio-locales.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .locales__hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .locales__hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Sección ubicación locales*/
+.ubicacion__container {
+  padding: 30px 0px;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  border-bottom: 1px solid black;
+  text-align: center; }
+  .ubicacion__container .ubicacion__ubi {
+    width: 95%; }
+    .ubicacion__container .ubicacion__ubi .ubicacion__map {
+      width: 95%;
+      height: 280px; }
+
+@media (min-width: 768px) {
+  .locales__hero {
+    height: 70vh; }
+  /* Sección locales */
+  .ubicacion__container .locales__hero {
+    height: 70vh; }
+  .ubicacion__container .ubicacion__ubi {
+    height: 320px; }
+    .ubicacion__container .ubicacion__ubi .ubicacion__map {
+      width: 90%;
+      height: 320px; } }
+
+@media (min-width: 1024px) {
+  /* Sección locales */
+  .ubicacion__container {
+    grid-template-columns: repeat(2, 1fr); }
+    .ubicacion__container .ubicacion__ubi {
+      height: 380px; }
+      .ubicacion__container .ubicacion__ubi .ubicacion__map {
+        width: 90%;
+        height: 380px; } }
+
+/* Sección hero galeria */
+.galeria__hero {
+  height: 80vh;
+  background-image: url(../../conten/1-inicio-galeria.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .galeria__hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .galeria__hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Sección galería */
+.sect-galeria__container {
+  margin: 10px;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  border-bottom: 1px solid black; }
+  .sect-galeria__container .sect-galeria__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; }
+  .sect-galeria__container .sect-galeria__img:hover {
+    cursor: pointer;
+    opacity: 0.7; }
+
+@media (min-width: 768px) {
+  .galeria__hero {
+    height: 70vh; }
+  /* Sección galería */
+  .sect-galeria__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img_1 img_2" "img_3 img_3" "img_11 img_14"  "img_8 img_8" "img_4 img_5" "img_7 img_7" "img_13 img_12" "img_9 img_9" "img_6 img_10"; }
+    .sect-galeria__container .img_1 {
+      grid-area: img_1; }
+    .sect-galeria__container .img_2 {
+      grid-area: img_2; }
+    .sect-galeria__container .img_3 {
+      grid-area: img_3; }
+    .sect-galeria__container .img_4 {
+      grid-area: img_4; }
+    .sect-galeria__container .img_5 {
+      grid-area: img_5; }
+    .sect-galeria__container .img_6 {
+      grid-area: img_6; }
+    .sect-galeria__container .img_7 {
+      grid-area: img_7; }
+    .sect-galeria__container .img_8 {
+      grid-area: img_8; }
+    .sect-galeria__container .img_9 {
+      grid-area: img_9; }
+    .sect-galeria__container .img_10 {
+      grid-area: img_10; }
+    .sect-galeria__container .img_11 {
+      grid-area: img_11; }
+    .sect-galeria__container .img_12 {
+      grid-area: img_12; }
+    .sect-galeria__container .img_13 {
+      grid-area: img_13; }
+    .sect-galeria__container .img_14 {
+      grid-area: img_14; } }
+
+@media (min-width: 1024px) {
+  /* Seccipon galería */
+  .sect-galeria__container {
+    margin: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "img_1  img_2   img_3" "img_4  img_4   img_11" "img_5  img_6   img_7" "img_14 img_13  img_12" "img_8  img_9  img_10"; } }
+
+/* Sección footer */
 .footer {
   background-color: black;
   color: white;
   border-top: 5px solid yellow; }
   .footer .footer__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
+    width: 100%;
+    display: grid;
+    place-items: center; }
     .footer .footer__container .footer__icons {
       padding: 15px;
       margin: 0px 10px;
-      border-bottom: 1px solid white; }
+      border-bottom: 1px solid #a8a8a8; }
     .footer .footer__container .footer__copy {
       margin-top: 15px; }
     .footer .footer__container .footer__img {
       width: 38px;
       margin: 0px 10px; }
     .footer .footer__container .footer__img:hover {
-      background-color: rgba(255, 255, 0, 0.315);
-      border: 1px solid orange;
+      background-color: rgba(236, 240, 10, 0.315);
       border-radius: 100%; }
+
+@media (min-width: 768px) {
+  /* Sección footer */
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "copy   icons"; }
+    .footer__container .footer__icons {
+      grid-area: icons; }
+    .footer__container .footer__copy {
+      grid-area: copy; } }
+
+/* Sección hero nosotros */
+.nosotros__hero {
+  height: 80vh;
+  background-image: url(../../conten/section-nosotros.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center; }
+  .nosotros__hero .hero__container {
+    width: 80%;
+    text-align: center; }
+    .nosotros__hero .hero__container .hero__text {
+      font-size: 2.5rem;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold; }
+
+/* Seccipon historia */
+.historia__container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 50px 0px;
+  border-bottom: 1px solid black;
+  text-align: center; }
+  .historia__container .historia__title-h3 {
+    font-weight: 600; }
+  .historia__container .historia__img {
+    width: 95%;
+    padding-bottom: 30px; }
+
+@media (min-width: 768px) {
+  .nosotros__hero {
+    height: 70vh; }
+  .historia__container {
+    width: 75%; }
+    .historia__container .historia__img {
+      width: 85%; } }

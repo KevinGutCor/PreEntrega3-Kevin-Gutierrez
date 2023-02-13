@@ -1,0 +1,115 @@
+/* Sección hero galeria */
+.galeria__hero{
+    height: 80vh;
+    background-image: url(../../conten/1-inicio-galeria.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid; 
+    place-items: center;
+    .hero__container{
+        width: 80%;
+        text-align: center;
+        .hero__text{
+            font-size: 2.5rem;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        }
+    }
+}
+
+/* Sección galería */
+.sect-galeria__container{
+    margin: 10px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    border-bottom: 1px solid black;
+    .sect-galeria__img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+    } 
+    .sect-galeria__img:hover{
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+
+@media (min-width: 768px){
+    .galeria__hero{
+        height: 70vh;
+    }
+    /* Sección galería */
+    .sect-galeria__container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "img_1 img_2"
+            "img_3 img_3"
+            "img_11 img_14" 
+            "img_8 img_8"
+            "img_4 img_5"
+            "img_7 img_7"
+            "img_13 img_12"
+            "img_9 img_9"
+            "img_6 img_10";
+        .img_1{
+            grid-area: img_1;
+        }
+        .img_2{
+            grid-area: img_2;
+        }
+        .img_3{
+            grid-area: img_3;
+        }
+        .img_4{
+            grid-area: img_4;
+        }
+        .img_5{
+            grid-area: img_5;
+        }
+        .img_6{
+            grid-area: img_6;
+        }
+        .img_7{
+            grid-area: img_7;
+        }
+        .img_8{
+            grid-area: img_8;
+        }
+        .img_9{
+            grid-area: img_9;
+        }
+        .img_10{
+            grid-area: img_10;
+        }
+        .img_11{
+            grid-area: img_11;
+        }
+        .img_12{
+            grid-area: img_12;
+        }
+        .img_13{
+            grid-area: img_13;
+        }
+        .img_14{
+            grid-area: img_14;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    /* Seccipon galería */
+    .sect-galeria__container{
+        margin: 60px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "img_1  img_2   img_3"
+            "img_4  img_4   img_11"
+            "img_5  img_6   img_7"
+            "img_14 img_13  img_12"
+            "img_8  img_9  img_10"
+            ;
+        }
+}

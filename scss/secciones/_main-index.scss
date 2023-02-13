@@ -24,6 +24,7 @@
     width: 90%;
     margin: 30px auto;
     display: grid;
+    grid-template-columns: repeat(1, 1fr);
     place-items: center;
     gap: 30px;
     text-align: center;
@@ -31,7 +32,7 @@
         text-transform: uppercase;
     }
     .camara__img{
-        width: 95%;
+        width: 90%;
         border-radius: 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.61);
     }
@@ -50,7 +51,6 @@
         width: 85%;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
         .lentes__img{
             width: 180px;
             height: 180px;
@@ -62,7 +62,6 @@
             margin: 15px 0px;
             padding: 20px 0px;
             text-align: center;
-            box-shadow: 0 0 25px rgba(31, 31, 31, 0.76);
         }
         .lentes__paragraph{
             padding: 5px;
@@ -130,19 +129,119 @@
     margin: 30px 0px;
     text-align: center;
     .datos__container{
-        margin: auto;
+        margin: 0px auto;
         width: 90%;
         margin: 30px auto;
         display: grid;
-        grid-template-columns: 1, 1fr;
         gap: 20px;
         text-align: center;
         .datos__cartas{
-            border-bottom: 1px solid black;
-        }
-        .item-3{
-            border: none;
+            background-color: rgb(221, 219, 219);
+            padding: 20px 5px;
+            border-radius: 5px;
         }
     }
 }
 
+@media (min-width: 768px){
+    /* sección hero index*/
+    .hero{
+        height: 70vh;
+    }
+
+    /* Sección camara index*/
+    .camara__container{
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Sección lentes index */
+    .lentes__container{
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+        .lentes__cartas{
+            padding: 1rem ;
+        }
+    }
+
+    /* Sección galería index*/
+    .galeria{
+        height: 65vh;
+    }
+
+    /* Sección accesorios index */
+    .accesorios__container{
+        margin: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        grid-template-areas:
+        "elemt-1    elemt-2";
+        .accesorios__text{
+            grid-area: elemt-2;
+        }
+        .accesorios__img{
+            grid-area: elemt-1;
+        }
+    }
+
+    /* Sección nosotros index */
+    .nosotros__container{
+        margin: 50px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Sección datos index*/
+    .datos__container{
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        .datos__cartas{
+            padding: 20px 10px;
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    /* camara index*/
+    .camara__container{
+        .camara__paragraph{
+            padding: 1rem 0px;
+        }
+        .camara__img{
+            width: 80%;
+        }
+    }
+
+    /* lentes index */
+    .lentes__container{
+        width: 100%;
+        padding-bottom: 30px;
+        .lentes__paragraph{
+            margin: 1.2rem 12px;
+        }
+    }
+
+    /* accesorios index */
+    .accesorios__container{
+        .accesorios__paragraph{
+            padding: 1rem 0px;
+        }
+        .accesorios__img{
+            width: 80%;
+        }
+    }
+
+    /* nosotros index */
+    .nosotros__container{
+        margin: 30px 0px;
+        .nosotros__paragraph{
+            padding: 1rem 0px;
+        }
+        .nosotros__img{
+            width: 75%;
+        }
+    }
+}
