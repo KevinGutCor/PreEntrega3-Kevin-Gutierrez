@@ -1,0 +1,161 @@
+/* SECCIÓN PRO-CAM */
+.productos__container{
+    margin: 0px auto;
+    display: grid;
+    .productos__cont-img{
+        width: 95%;
+        margin: 10px auto;
+        place-items: center;
+        text-align: center;
+        .productos__title{
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-bottom: 10px;
+        }
+    }
+    .productos__cont-img{
+        padding: 15px 0px;
+    }
+}
+
+.productos__compu-1{
+    background-color: black;
+    color: white;
+    .productos__text{
+        color: rgb(185, 185, 185);
+    }
+}
+
+.carousel{
+    border: 2px solid rgb(85, 84, 84) !important;
+    width: 95% !important;
+    border-radius: 5px;
+    margin: 10px auto;
+    .carousel-item{
+        background-color: white;
+    }
+    .img__m{
+        margin: auto;
+        width: 85%;   
+    }
+    .carousel-control-prev-icon{
+        background-color: rgba(255, 166, 0, 0.836) !important;
+        border-radius: 5px;
+    }
+    .carousel-control-next-icon{
+        background-color: rgba(255, 166, 0, 0.836) !important;
+        border-radius: 5px;
+    }
+}
+
+/* Seccion de cartas */
+.productos__cont-info{
+    display: grid;
+    place-items: center;
+    padding: 20px 0px;
+    .productos__title-info{
+        text-align: center;
+        font-weight: 700;
+    }
+    .productos__text{
+        width: 85%;
+        margin: 10px 30px;
+        font-style: italic;
+    }
+    .productos__btn{
+        margin: 5px auto;
+        place-items: center;
+        .btn__precio{
+            margin-right: 10px;
+            padding: 8px 18px;
+            color: black;
+            font-weight: 600;
+            background-color: rgb(197, 196, 196);
+            border-radius: 10px;
+        }
+        .btn__comprar{
+            text-decoration: none;
+            margin-left: 10px;
+            padding: 8px 18px;
+            font-weight: 600;
+            color: black;
+            background-color: rgb(255, 192, 19);
+            border-radius: 10px;
+        }
+        .btn__comprar:hover{
+            background-color: rgba(255, 166, 0, 0.623);
+            color: white;
+            border: 1px solid orange;
+            box-shadow: 0 0 15px rgba(250, 171, 0, 0.685);
+        }
+    }
+}
+
+@media (min-width: 768px){
+    .productos__container{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+        "p_img p_img p_img p_img p_text p_text p_text";
+        .prod__img{
+            grid-area: p_img;
+        }
+        .prod__text{
+            grid-area: p_text ;
+        }    
+    }
+}
+
+@media (min-width: 1024px){
+
+    .productos__container{
+        .productos__cont-info{
+            padding: 80px 0px;
+        }
+    }
+    .productos__compu-1{
+        background-color: black;
+        color: white;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "p_img p_img p_img p_text p_text";
+        .prod__img{
+            grid-area: p_img;
+        }
+        .prod__text{
+            grid-area: p_text ;
+        }    
+        .productos__text{
+            color: rgb(185, 185, 185);
+        }
+    }
+
+    .productos__compu-2{
+        color: black;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "p_text p_text p_img p_img p_img";
+        .prod__img{
+            grid-area: p_img;
+        }
+        .prod__text{
+            grid-area: p_text ;
+        } 
+        .productos__text{
+            color: rgb(41, 40, 40);
+        }   
+        
+    }
+
+    .carousel{
+        width: 85%;
+        .img__m{
+            width: 75%;
+        }
+    }
+}
+
+
+
