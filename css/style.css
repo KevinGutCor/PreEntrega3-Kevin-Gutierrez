@@ -175,7 +175,7 @@ a {
 /* Sección galería index */
 .galeria {
   height: 75vh;
-  background-image: url(../../conten/img-prueba2-orange.jpg);
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552757/proyecto-coder-hause/img-prueba2-orange_zshs4n.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -304,7 +304,7 @@ a {
 /* SECCIÓNES-LOCALES */
 .locales__hero {
   height: 80vh;
-  background-image: url(../../conten/inicio-locales.jpg);
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552744/proyecto-coder-hause/inicio-locales_ojwsgq.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -331,7 +331,8 @@ a {
     width: 95%; }
     .ubicacion__container .ubicacion__ubi .ubicacion__map {
       width: 95%;
-      height: 280px; }
+      height: 280px;
+      box-shadow: 0 0 10px rgba(65, 63, 58, 0.685); }
 
 @media (min-width: 768px) {
   .locales__hero {
@@ -358,7 +359,7 @@ a {
 /* SECCION MAIN-GALERÍA*/
 .galeria__hero {
   height: 80vh;
-  background-image: url(../../conten/1-inicio-galeria.jpg);
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552766/proyecto-coder-hause/1-inicio-galeria_kwkw6m.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -466,7 +467,7 @@ a {
 /* SECCIÓN MAIN-NOSOTROS */
 .nosotros__hero {
   height: 80vh;
-  background-image: url(../../conten/section-nosotros.jpg);
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552743/proyecto-coder-hause/section-nosotros_tk64uz.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -505,7 +506,7 @@ a {
 /* SECCIÓN PRO-CAM */
 .main__sec-hero {
   height: 80vh;
-  background-image: url(../../conten/img-pro-cam-reflex.jpg);
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552726/proyecto-coder-hause/img-pro-cam-reflex_yfxgc3.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
@@ -646,7 +647,7 @@ a {
 /*  SECCIÓN-PRO-LENTES */
 .main__sec-lentes-hero {
   height: 80vh;
-  background-image: url(../../conten/pro-lent-reflex.jpg);
+  background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552740/proyecto-coder-hause/pro-lent-reflex_ksesqd.jpg);
   background-position: center;
   background-size: cover;
   display: grid;

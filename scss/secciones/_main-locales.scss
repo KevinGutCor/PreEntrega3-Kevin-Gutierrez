@@ -1,7 +1,7 @@
 /* SECCIÓNES-LOCALES */
 .locales__hero{
     height: 80vh;
-    background-image: url(../../conten/inicio-locales.jpg);
+    background-image: url(https://res.cloudinary.com/dama47dzc/image/upload/v1676552744/proyecto-coder-hause/inicio-locales_ojwsgq.jpg);
     background-position: center;
     background-size: cover;
     display: grid;
@@ -32,6 +32,7 @@
         .ubicacion__map{
             width: 95%;
             height: 280px;
+            box-shadow: 0 0 10px rgba(65, 63, 58, 0.685);
         }
     }
     
