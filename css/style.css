@@ -660,23 +660,24 @@ a {
     font-weight: 600; }
 
 .lentes__container {
-  padding: 35px 0px;
+  padding: 40px 0px;
   display: grid;
   gap: 10px;
-  border-bottom: 2px solid #3a3939;
   text-align: center; }
   .lentes__container .lentes__carta {
     margin: 5px;
     padding: 10px 10px;
     background-color: #e0dede;
-    border-radius: 5px;
-    display: grid; }
+    border-radius: 10px;
+    display: grid;
+    box-shadow: 0 0 15px rgba(104, 104, 104, 0.685); }
     .lentes__container .lentes__carta .lentes__title {
       margin: 15px 0px;
       text-transform: uppercase;
       font-weight: 600; }
     .lentes__container .lentes__carta .lentes__img {
-      background-color: white;
+      background: #aeaeb1;
+      background: linear-gradient(344deg, #aeaeb1 15%, #d4d4db 39%, #f1fbfc 76%);
       border: 1px solid black;
       border-radius: 5px;
       margin: 5px auto;
@@ -711,8 +712,8 @@ a {
       .lentes__container .lentes__carta .lentes__btn .btn__comprar:hover {
         background-color: rgba(255, 166, 0, 0.623);
         color: white;
-        border: 1px solid orange;
-        box-shadow: 0 0 15px rgba(250, 171, 0, 0.685); }
+        border: 2px solid orange;
+        box-shadow: 0 0 15px #faab00; }
 
 @media (min-width: 768px) {
   .main__sec-lentes-hero {

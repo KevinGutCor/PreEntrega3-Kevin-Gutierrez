@@ -16,24 +16,25 @@
 }
 
 .lentes__container{
-    padding: 35px 0px;
+    padding: 40px 0px;
     display: grid;
     gap: 10px;
-    border-bottom: 2px solid rgb(58, 57, 57);
     text-align: center;
     .lentes__carta{
         margin: 5px;
         padding: 10px 10px;
         background-color: rgb(224, 222, 222);
-        border-radius: 5px;
+        border-radius: 10px;
         display: grid;
+        box-shadow: 0 0 15px rgba(104, 104, 104, 0.685);
         .lentes__title{
             margin: 15px 0px;
             text-transform: uppercase;
             font-weight: 600;
         }
         .lentes__img{
-            background-color: white;
+            background: rgb(174,174,177);
+            background: linear-gradient(344deg, rgba(174,174,177,1) 15%, rgba(212,212,219,1) 39%, rgba(241,251,252,1) 76%);
             border: 1px solid black;
             border-radius: 5px;
             margin: 5px auto;
@@ -73,8 +74,8 @@
             .btn__comprar:hover{
                 background-color: rgba(255, 166, 0, 0.623);
                 color: white;
-                border: 1px solid orange;
-                box-shadow: 0 0 15px rgba(250, 171, 0, 0.685);
+                border: 2px solid orange;
+                box-shadow: 0 0 15px rgb(250, 171, 0);
             }
         }
     }
